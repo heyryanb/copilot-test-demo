@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Copilot Data Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GitHub Copilot Data Viewer</h1>
+    </header>
+    <main>
+        <section>
+            <form id="orgForm">
+                <label for="orgName">Organization Name:</label>
+                <input type="text" id="orgName" name="orgName" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section>
+            <canvas id="barGraph"></canvas>
+        </section>
+        <section>
+            <button id="downloadCSV">Download CSV</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
